@@ -66,7 +66,7 @@ def upload_question():
     return jsonify({"success": "Sent successfully."})
 
 #this route is temporary just for testing sake
-@app.route("/data/<exam_no>")
+@app.route("/<exam_no>")
 def all_std_log(exam_no):
     question_data = [ ]
     std_password = { }
